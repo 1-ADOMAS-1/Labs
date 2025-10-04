@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 # Параметры
-num_molecules_solid = 25*25  # 12x12 для плотной решетки
-num_molecules_liquid = 500  # Для жидкости
+num_molecules_solid = 30*30  # 30x30 для плотной решетки
+num_molecules_liquid = 600  # Для жидкости
 num_molecules_gas = 50  # Для газа
 
 space_size = 10  # Размер области
@@ -38,7 +38,7 @@ gas_y = np.random.uniform(0, space_size * 1.5, num_molecules_gas)
 
 # Фигура с подграфиками
 fig, (ax_solid, ax_liquid, ax_gas) = plt.subplots(1, 3, figsize=(15, 5))
-fig.suptitle('Молекул в разных состояниях')
+fig.suptitle('Молекулы в разных состояниях')
 
 # Настройка осей: разные лимиты для уровнивания
 ax_solid.set_xlim(0, space_size)
